@@ -1,3 +1,4 @@
+package com.example.aquaanalyzomatic;
 
 import static androidx.constraintlayout.helper.widget.MotionEffect.TAG;
 
@@ -17,6 +18,7 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+
 
 import com.google.firebase.auth.UserProfileChangeRequest;
 import com.google.firebase.database.DatabaseReference;
@@ -57,7 +59,7 @@ public class CreateUser extends Activity {
 
 
         create.setOnClickListener(new View.OnClickListener() {
-            @RequiresApi(api = Build.VERSION_CODES.O)
+            @androidx.test.filters.SdkSuppress(minSdkVersion = Build.VERSION_CODES.O)
             @Override
             public void onClick(View v) {
                 createAccount();

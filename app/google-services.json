@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "829329113011",
+    "project_id": "scouting-app-d23c8",
+    "storage_bucket": "scouting-app-d23c8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:829329113011:android:258a0ce82cd8497aaf15c6",
+        "android_client_info": {
+          "package_name": "com.example.aquaanalyzomatic"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDTcmQs0eJX8UknynS7MnmB-5imMvuM_U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
