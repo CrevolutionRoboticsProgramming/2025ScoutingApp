@@ -1,12 +1,11 @@
+package com.example.aquaanalyzomatic;
 
 import static androidx.constraintlayout.helper.widget.MotionEffect.TAG;
 
-import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -28,12 +27,6 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
-import java.security.NoSuchProviderException;
-import java.security.SecureRandom;
-import java.util.Base64;
 
 public class SignInScreen extends AppCompatActivity {
 
@@ -83,7 +76,7 @@ public class SignInScreen extends AppCompatActivity {
         createAccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //screen will be changed to the CreateUser Screen
+                //screen will be changed to the com.example.aquaanalyzomatic.CreateUser Screen
                 Intent changeScreens = new Intent(SignInScreen.this, CreateUser.class);
                 startActivity(changeScreens);
             }
