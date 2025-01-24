@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AquaAnalyzomatic"
         tools:targetApi="31">
-    <activity android:name=".activity_signin"
+    <activity android:name="com.example.aquaanalyzomatic.SignInScreen"
         android:exported="true">
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
