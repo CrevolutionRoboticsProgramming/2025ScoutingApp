@@ -1,8 +1,6 @@
 package com.example.aquaanalyzomatic;
 
-import static androidx.constraintlayout.helper.widget.MotionEffect.TAG;
-
-import androidx.annotation.RequiresApi;
+import static androidx.constraintlayout.motion.widget.MotionScene.TAG;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -43,7 +41,9 @@ public class CreateUser extends Activity {
     @SuppressLint("MissingInflatedId")
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_create_user);
+        setContentView(R.layout.activity_create_user);      // Retrieve the data passed from SignInScreen
+        Intent intent = getIntent();
+        String username = intent.getStringExtra("username");
         firebase = FirebaseDatabase.getInstance();
         userDatabase = firebase.getReference("/users");
         auth = FirebaseAuth.getInstance();
@@ -59,7 +59,6 @@ public class CreateUser extends Activity {
 
 
         create.setOnClickListener(new View.OnClickListener() {
-            @androidx.test.filters.SdkSuppress(minSdkVersion = Build.VERSION_CODES.O)
             @Override
             public void onClick(View v) {
                 createAccount();
