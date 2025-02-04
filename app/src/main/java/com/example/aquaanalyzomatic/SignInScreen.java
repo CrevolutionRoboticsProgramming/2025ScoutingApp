@@ -31,7 +31,7 @@ public class SignInScreen extends AppCompatActivity {
     FirebaseAuth auth;
 
     private Button signin, createAccount, offline;
-    private EditText usernameedt, passwordedt;
+    private EditText username, passwordText;
     private String email, password;
     private ProgressBar progressBar;
     private FrameLayout frameLayout;
@@ -50,8 +50,6 @@ public class SignInScreen extends AppCompatActivity {
 
         signin = findViewById(R.id.signinBTN);
         createAccount = findViewById(R.id.createAccountBTN);
-        usernameedt = findViewById(R.id.usernameEDT);
-        passwordedt = findViewById(R.id.passwordEDT);
         progressBar = findViewById(R.id.progressBar2);
         frameLayout = findViewById(R.id.frameLayout);
         offline = findViewById(R.id.offline);
@@ -74,8 +72,8 @@ public class SignInScreen extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //screen will be changed to the com.example.aquaanalyzomatic.CreateUser Screen
-                Intent changeScreens = new Intent(SignInScreen.this, CreateUser.class);
-                startActivity(changeScreens);
+                //Intent changeScreens = new Intent(SignInScreen.this, CreateUser.class);
+                //startActivity(changeScreens);
             }
         });
 
@@ -96,6 +94,9 @@ public class SignInScreen extends AppCompatActivity {
 
         frameLayout.setVisibility(View.VISIBLE);
         progressBar.setVisibility(View.VISIBLE);
+
+        EditText usernameedt = findViewById(R.id.usernameEDT);
+        EditText passwordedt = findViewById(R.id.passwordEDT);
 
         email = usernameedt.getText().toString().trim();
         password = passwordedt.getText().toString();
