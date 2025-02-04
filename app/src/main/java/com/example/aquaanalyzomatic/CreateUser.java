@@ -44,6 +44,7 @@ public class CreateUser extends Activity {
         setContentView(R.layout.activity_create_user);      // Retrieve the data passed from SignInScreen
         Intent intent = getIntent();
         String username = intent.getStringExtra("username");
+
         firebase = FirebaseDatabase.getInstance();
         userDatabase = firebase.getReference("/users");
         auth = FirebaseAuth.getInstance();
