@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace 'com.example.aquaanalyzomatic'
-    compileSdk 34
+    compileSdk 35
 
     defaultConfig {
         applicationId "com.example.aquaanalyzomatic"
@@ -36,6 +36,8 @@ dependencies {
     implementation libs.material
     implementation libs.firebase.auth
     implementation libs.firebase.database
+    implementation libs.activity
+    implementation libs.constraintlayout
     testImplementation libs.junit
     testImplementation libs.runner
     androidTestImplementation libs.ext.junit
