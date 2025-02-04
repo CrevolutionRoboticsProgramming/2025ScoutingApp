@@ -41,9 +41,10 @@ public class CreateUser extends Activity {
     @SuppressLint("MissingInflatedId")
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // Retrieve the data passed from SignInScreen
+        setContentView(R.layout.activity_create_user);      // Retrieve the data passed from SignInScreen
         Intent intent = getIntent();
-        //String username = intent.getStringExtra("username");ntView(R.layout.activity_create_user);
+        String username = intent.getStringExtra("username");
+
         firebase = FirebaseDatabase.getInstance();
         userDatabase = firebase.getReference("/users");
         auth = FirebaseAuth.getInstance();
@@ -59,7 +60,6 @@ public class CreateUser extends Activity {
 
 
         create.setOnClickListener(new View.OnClickListener() {
-            //@androidx.test.filters.SdkSuppress(minSdkVersion = Build.VERSION_CODES.O)
             @Override
             public void onClick(View v) {
                 createAccount();
