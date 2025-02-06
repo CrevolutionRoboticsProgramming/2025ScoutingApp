@@ -70,23 +70,21 @@
             android:textSize="45sp"
             android:translationX="300dp" />
 
-        <Button
+        <ImageButton
             android:id="@+id/AutonButton"
-            android:layout_width="174dp"
-            android:layout_height="match_parent"
-            android:background="#7DBBE7"
-            android:text="Auton"
-            android:textSize="35sp"
-            android:translationX="-825dp" />
-
-        <Button
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/autonbutton"
+            android:translationX="-780dp" />
+        <ImageButton
             android:id="@+id/TeleOpButton"
-            android:layout_width="174dp"
-            android:layout_height="match_parent"
-            android:background="#EFB821"
-            android:text="Tele-Op"
-            android:textSize="35sp"
-            android:translationX="-800dp" />
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/teleopbutton"
+            android:translationX="-780dp" />
+
     </LinearLayout>
     <!--top orange box - Text Team #:, Enter #,-->
 
