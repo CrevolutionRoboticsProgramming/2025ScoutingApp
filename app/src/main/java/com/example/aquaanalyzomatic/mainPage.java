@@ -13,9 +13,5 @@ public class mainPage extends AppCompatActivity {
         // Retrieve the data passed from SignInScreen
         Intent intent = getIntent();
         String username = intent.getStringExtra("username");
-
-        // Use the username to customize the UI or perform actions
-        TextView usernameTextView = findViewById(R.id.usernameTextView);
-        usernameTextView.setText("Welcome, " + username);
     }
 }

@@ -1,3 +1,23 @@
 <resources>
+    <!-- Text View Strings -->
     <string name="app_name">AquaAnalyzomatic</string>
+    <string name="QRCodeBtn">Generate Qr Code</string>
+    <string name="Processor"></string>
+    
+    <!-- Auton Strings -->
+    <string name="AutonCheck"></string>
+    <string name="LeaveStart"></string>
+    <string name="AutonAlgaeAttempts"></string>
+    <string name="AutonCoralL1"></string>
+    <string name="AutonCoralL2"></string>
+    <string name="AutonCoralL3"></string>
+    <string name="AutonCoralL4"></string>
+    <!-- Tele-Op Strings -->
+    <string name="ProcessedTele"></string>
+    <string name="NetHuman"></string>
+    <string name="NetBot"></string>
+    <string name="Parking"></string>
+    <string name="ClimbShallow"></string>
+    <string name="ClimbDeep"></string>
+    <string name="Username"></string>
 </resources>
