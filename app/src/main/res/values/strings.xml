@@ -2,22 +2,29 @@
     <!-- Text View Strings -->
     <string name="app_name">AquaAnalyzomatic</string>
     <string name="QRCodeBtn">Generate Qr Code</string>
-    <string name="Processor"></string>
-    
+    <string name="Coral">Coral</string>
+    <string name="Algae">Algae</string>
+    <string name="Username">Username:</string>
+    <string name="TeamNum">Team #:</string>
+    <string name="MatchNum">Match #:</string>
+
     <!-- Auton Strings -->
-    <string name="AutonCheck"></string>
-    <string name="LeaveStart"></string>
-    <string name="AutonAlgaeAttempts"></string>
-    <string name="AutonCoralL1"></string>
-    <string name="AutonCoralL2"></string>
-    <string name="AutonCoralL3"></string>
-    <string name="AutonCoralL4"></string>
+    <string name="CheckAuton">Has Auton?</string>
+    <string name="CheckLeaveStart">Leaves start?</string>
+    <string name="AutonAlgaeAttempts">Attempts</string>
+    <string name="AutonNetScored">Scored</string>
+    <string name="AutonCoralL1">L1</string>
+    <string name="AutonCoralL2">L2</string>
+    <string name="AutonCoralL3">L3</string>
+    <string name="AutonCoralL4">L4</string>
+
     <!-- Tele-Op Strings -->
-    <string name="ProcessedTele"></string>
-    <string name="NetHuman"></string>
-    <string name="NetBot"></string>
-    <string name="Parking"></string>
-    <string name="ClimbShallow"></string>
-    <string name="ClimbDeep"></string>
-    <string name="Username"></string>
+    <string name="CheckHumanPlayer">Human Player?</string>
+    <string name="ProcessedTele">Processed</string>
+    <string name="NetHumanAttempts">Human-Player Net Attempts</string>
+    <string name="NetBotAttempts">Algae Net Attempts</string>
+    <string name="NetBotScored">Algae Net Scored</string>
+    <string name="Parking">Parked</string>
+    <string name="ClimbShallow">Shallow</string>
+    <string name="ClimbDeep">Deep</string>
 </resources>
