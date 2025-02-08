@@ -7,6 +7,8 @@
     <string name="Username">Username:</string>
     <string name="TeamNum">Team #:</string>
     <string name="MatchNum">Match #:</string>
+    <string name="SignOutBtn">Sign Out</string>
+    <string name="AutonLayout">Auton Field</string>
 
     <!-- Auton Strings -->
     <string name="CheckAuton">Has Auton?</string>
@@ -22,9 +24,11 @@
     <string name="CheckHumanPlayer">Human Player?</string>
     <string name="ProcessedTele">Processed</string>
     <string name="NetHumanAttempts">Human-Player Net Attempts</string>
+    <string name="NetHumanScored">Human-Player Net Scored</string>
     <string name="NetBotAttempts">Algae Net Attempts</string>
     <string name="NetBotScored">Algae Net Scored</string>
-    <string name="Parking">Parked</string>
-    <string name="ClimbShallow">Shallow</string>
-    <string name="ClimbDeep">Deep</string>
+    <string name="CheckClimb">Climb?</string>
+    <string name="Parking">Parked?</string>
+    <string name="ClimbShallow">Shallow Climb?</string>
+    <string name="ClimbDeep">Deep Climb?</string>
 </resources>
