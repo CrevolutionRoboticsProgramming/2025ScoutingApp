@@ -1,3 +1,34 @@
 <resources>
+    <!-- Text View Strings -->
     <string name="app_name">AquaAnalyzomatic</string>
+    <string name="QRCodeBtn">Submit</string>
+    <string name="Coral">Coral</string>
+    <string name="Algae">Algae</string>
+    <string name="Username">Username:</string>
+    <string name="TeamNum">Team #:</string>
+    <string name="MatchNum">Match #:</string>
+    <string name="SignOutBtn">Sign Out</string>
+    <string name="AutonLayout">Auton Field</string>
+
+    <!-- Auton Strings -->
+    <string name="CheckAuton">Has Auton?</string>
+    <string name="CheckLeaveStart">Leaves start?</string>
+    <string name="AutonAlgaeAttempts">Attempts</string>
+    <string name="AutonNetScored">Scored</string>
+    <string name="AutonCoralL1">L1</string>
+    <string name="AutonCoralL2">L2</string>
+    <string name="AutonCoralL3">L3</string>
+    <string name="AutonCoralL4">L4</string>
+
+    <!-- Tele-Op Strings -->
+    <string name="CheckHumanPlayer">Human Player?</string>
+    <string name="ProcessedTele">Processed</string>
+    <string name="NetHumanAttempts">Human-Player Net Attempts</string>
+    <string name="NetHumanScored">Human-Player Net Scored</string>
+    <string name="NetBotAttempts">Algae Net Attempts</string>
+    <string name="NetBotScored">Algae Net Scored</string>
+    <string name="CheckClimb">Climb?</string>
+    <string name="Parking">Parked?</string>
+    <string name="ClimbShallow">Shallow Climb?</string>
+    <string name="ClimbDeep">Deep Climb?</string>
 </resources>
