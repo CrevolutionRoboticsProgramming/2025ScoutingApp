@@ -1,7 +1,7 @@
 <resources>
     <!-- Text View Strings -->
     <string name="app_name">AquaAnalyzomatic</string>
-    <string name="QRCodeBtn">Generate Qr Code</string>
+    <string name="QRCodeBtn">Submit</string>
     <string name="Coral">Coral</string>
     <string name="Algae">Algae</string>
     <string name="Username">Username:</string>
