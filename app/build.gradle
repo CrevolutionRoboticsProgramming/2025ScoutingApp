@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.aquaanalyzomatic"
-        minSdk 32
+        minSdk 26
         targetSdk 34
         versionCode 1
         versionName "1.0"
@@ -30,11 +30,14 @@ android {
 }
 
 dependencies {
+    implementation(platform("com.google.firebase:firebase-bom:32.7.2"))
 
     implementation libs.appcompat
     implementation libs.material
     implementation libs.firebase.auth
     implementation libs.firebase.database
+    implementation libs.activity
+    implementation libs.constraintlayout
     testImplementation libs.junit
     testImplementation libs.runner
     androidTestImplementation libs.ext.junit
