@@ -10,7 +10,10 @@ import androidx.appcompat.app.AppCompatActivity;
 public class mainPage extends AppCompatActivity {
 
     private Button submitBtn, signOutBtn, autonFieldBtn;
-    private EditText matchNum, teamNum, L1Num, L2Num, L3Num, L4Num, netAttemptsNum, netScoredNum, humanPlayerAttemptsNum, humanPlayerScoredNum;
+    private EditText matchNum, teamNum, L1Num, L2Num, L3Num, L4Num, netAttemptsNum, netScoredNum, HPShotsNum, HPScoredNum;
+
+    private ImageView L1Minus, L1Plus, L2Minus, L2Plus, L3Minus, L3Plus, L4Minus, L4Plus, netShotsMinus, netShotsPlus, netScoredMinus,
+            netScoredPlus, HPShotMinus, HPShotPlus, HPScoredMinus, HPScoredPlus, processedMinus, processedPlus;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +24,14 @@ public class mainPage extends AppCompatActivity {
         Intent intent = getIntent();
         String username = intent.getStringExtra("username");
 
+
+        // -------------------- Auton Vars -------------------- //
+
+
+        // -------------------- TeleOp Vars -------------------- //
+
+
+        // -------------------- Match Data Vars -------------------- //
 
     }
 }

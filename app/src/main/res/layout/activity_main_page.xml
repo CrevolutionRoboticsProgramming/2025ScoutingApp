@@ -121,90 +121,6 @@
         app:srcCompat="@drawable/finalminusbutton" />
 
     <ImageView
-        android:id="@+id/HumanPlayerAttemptsMinus"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:layout_marginStart="787dp"
-        android:layout_marginTop="338dp"
-        android:layout_marginEnd="162dp"
-        android:layout_marginBottom="187dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/finalminusbutton" />
-
-    <ImageView
-        android:id="@+id/ProcessedMinus"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:layout_marginStart="785dp"
-        android:layout_marginTop="491dp"
-        android:layout_marginEnd="164dp"
-        android:layout_marginBottom="34dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/finalminusbutton" />
-
-    <ImageView
-        android:id="@+id/HumanPlayerScoredMinus"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:layout_marginStart="787dp"
-        android:layout_marginTop="416dp"
-        android:layout_marginEnd="162dp"
-        android:layout_marginBottom="109dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/finalminusbutton" />
-
-    <ImageView
-        android:id="@+id/ProcessedPlus"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:layout_marginStart="932dp"
-        android:layout_marginTop="491dp"
-        android:layout_marginEnd="17dp"
-        android:layout_marginBottom="34dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/finalplusbutton" />
-
-    <ImageView
-        android:id="@+id/HumanPlayerScoredPlus"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:layout_marginStart="934dp"
-        android:layout_marginTop="416dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginBottom="109dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/finalplusbutton" />
-
-    <ImageView
-        android:id="@+id/HumanPlayerAttemptsPlus"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:layout_marginStart="933dp"
-        android:layout_marginTop="338dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="187dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/finalplusbutton" />
-
-    <ImageView
         android:id="@+id/NetAttemptsPlus"
         android:layout_width="75dp"
         android:layout_height="75dp"
@@ -417,9 +333,9 @@
         android:layout_width="68dp"
         android:layout_height="75dp"
         android:layout_marginStart="862dp"
-        android:layout_marginTop="491dp"
+        android:layout_marginTop="343dp"
         android:layout_marginEnd="94dp"
-        android:layout_marginBottom="34dp"
+        android:layout_marginBottom="182dp"
         android:clickable="false"
         android:ems="10"
         android:focusable="false"
@@ -436,53 +352,50 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/HumanPlayerNum"
-        android:layout_width="68dp"
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="142dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="643dp"
+        android:layout_marginTop="357dp"
+        android:layout_marginEnd="239dp"
+        android:layout_marginBottom="173dp"
+        android:text="@string/ProcessedTele"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ProcessedMinus"
+        android:layout_width="75dp"
         android:layout_height="75dp"
-        android:layout_marginStart="864dp"
-        android:layout_marginTop="416dp"
-        android:layout_marginEnd="92dp"
-        android:layout_marginBottom="109dp"
-        android:clickable="false"
-        android:ems="10"
-        android:focusable="false"
-        android:focusableInTouchMode="false"
-        android:inputType="number"
-        android:linksClickable="false"
-        android:longClickable="false"
-        android:text="0"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="40dp"
+        android:layout_marginStart="785dp"
+        android:layout_marginTop="343dp"
+        android:layout_marginEnd="164dp"
+        android:layout_marginBottom="182dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/finalminusbutton" />
 
-    <EditText
-        android:id="@+id/HumanPlayerAttemptsNum"
-        android:layout_width="70dp"
-        android:layout_height="74dp"
-        android:layout_marginStart="862dp"
-        android:layout_marginTop="340dp"
-        android:layout_marginEnd="92dp"
-        android:layout_marginBottom="186dp"
-        android:clickable="false"
-        android:ems="10"
-        android:focusable="false"
-        android:focusableInTouchMode="false"
-        android:inputType="number"
-        android:linksClickable="false"
-        android:longClickable="false"
-        android:text="0"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="40dp"
+    <ImageView
+        android:id="@+id/ProcessedPlus"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="932dp"
+        android:layout_marginTop="343dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="182dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/finalplusbutton" />
 
     <EditText
         android:id="@+id/NetScoredNum"
@@ -671,23 +584,6 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView14"
-        android:layout_width="142dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="643dp"
-        android:layout_marginTop="505dp"
-        android:layout_marginEnd="239dp"
-        android:layout_marginBottom="25dp"
-        android:text="@string/ProcessedTele"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
         android:id="@+id/textView12"
         android:layout_width="144dp"
         android:layout_height="74dp"
@@ -699,40 +595,6 @@
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="165dp"
-        android:layout_height="73dp"
-        android:layout_marginStart="622dp"
-        android:layout_marginTop="343dp"
-        android:layout_marginEnd="237dp"
-        android:layout_marginBottom="184dp"
-        android:text="@string/NetHumanAttempts"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView16"
-        android:layout_width="165dp"
-        android:layout_height="73dp"
-        android:layout_marginStart="622dp"
-        android:layout_marginTop="418dp"
-        android:layout_marginEnd="237dp"
-        android:layout_marginBottom="109dp"
-        android:text="@string/NetHumanScored"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -756,89 +618,37 @@
         app:layout_constraintVertical_bias="0.12" />
 
     <CheckBox
-        android:id="@+id/CheckLeaveStart"
-        android:layout_width="225dp"
-        android:layout_height="75dp"
-        android:layout_marginStart="353dp"
-        android:layout_marginTop="190dp"
-        android:layout_marginEnd="446dp"
-        android:layout_marginBottom="335dp"
-        android:text="@string/CheckLeaveStart"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <CheckBox
-        android:id="@+id/CheckAuton"
-        android:layout_width="225dp"
-        android:layout_height="75dp"
-        android:layout_marginStart="353dp"
-        android:layout_marginTop="268dp"
-        android:layout_marginEnd="446dp"
-        android:layout_marginBottom="257dp"
-        android:text="@string/CheckAuton"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <CheckBox
         android:id="@+id/CheckParking"
         android:layout_width="225dp"
         android:layout_height="75dp"
-        android:layout_marginStart="353dp"
-        android:layout_marginTop="343dp"
-        android:layout_marginEnd="446dp"
-        android:layout_marginBottom="182dp"
         android:text="@string/Parking"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteX="353dp"
+        tools:layout_editor_absoluteY="190dp" />
 
     <CheckBox
         android:id="@+id/CheckShallowClimb"
         android:layout_width="225dp"
         android:layout_height="75dp"
-        android:layout_marginStart="353dp"
-        android:layout_marginTop="418dp"
-        android:layout_marginEnd="446dp"
-        android:layout_marginBottom="107dp"
         android:text="@string/ClimbShallow"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteX="353dp"
+        tools:layout_editor_absoluteY="268dp" />
 
     <CheckBox
         android:id="@+id/CheckDeepClimb"
         android:layout_width="225dp"
         android:layout_height="75dp"
-        android:layout_marginStart="353dp"
-        android:layout_marginTop="493dp"
-        android:layout_marginEnd="446dp"
-        android:layout_marginBottom="32dp"
         android:text="@string/ClimbDeep"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteX="353dp"
+        tools:layout_editor_absoluteY="343dp" />
 
     <Button
         android:id="@+id/AutonLayoutBtn"
@@ -898,5 +708,234 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.461" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:visibility="gone"
+        tools:layout_editor_absoluteX="612dp"
+        tools:layout_editor_absoluteY="413dp">
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="175dp"
+            android:layout_height="75dp"
+            android:layout_marginEnd="225dp"
+            android:layout_marginBottom="75dp"
+            android:text="@string/NetHumanScored"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="175dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="76dp"
+            android:layout_marginEnd="225dp"
+            android:text="@string/NetHumanAttempts"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/HumanPlayerAttemptsMinus"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="175dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="150dp"
+            android:layout_marginBottom="74dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/finalminusbutton" />
+
+        <ImageView
+            android:id="@+id/HumanPlayerScoredMinus"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="176dp"
+            android:layout_marginTop="75dp"
+            android:layout_marginEnd="149dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/finalminusbutton" />
+
+        <EditText
+            android:id="@+id/HumanPlayerNum"
+            android:layout_width="68dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="253dp"
+            android:layout_marginTop="75dp"
+            android:layout_marginEnd="79dp"
+            android:clickable="false"
+            android:ems="10"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="number"
+            android:linksClickable="false"
+            android:longClickable="false"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/HumanPlayerAttemptsNum"
+            android:layout_width="70dp"
+            android:layout_height="74dp"
+            android:layout_marginStart="251dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="79dp"
+            android:layout_marginBottom="75dp"
+            android:clickable="false"
+            android:ems="10"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="number"
+            android:linksClickable="false"
+            android:longClickable="false"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.52" />
+
+        <ImageView
+            android:id="@+id/HumanPlayerAttemptsPlus"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="322dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="73dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/finalplusbutton" />
+
+        <ImageView
+            android:id="@+id/HumanPlayerScoredPlus"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="322dp"
+            android:layout_marginTop="75dp"
+            android:layout_marginEnd="3dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/finalplusbutton" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="black_back" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="990dp"
+        android:layout_height="575dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:visibility=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <CheckBox
+            android:id="@+id/CheckLeaveStart"
+            android:layout_width="225dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="419dp"
+            android:layout_marginEnd="766dp"
+            android:layout_marginBottom="78dp"
+            android:text="@string/CheckLeaveStart"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <CheckBox
+            android:id="@+id/CheckAuton"
+            android:layout_width="225dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="494dp"
+            android:layout_marginEnd="766dp"
+            android:layout_marginBottom="3dp"
+            android:text="@string/CheckAuton"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            app:srcCompat="@drawable/finalplusbutton"
+            tools:layout_editor_absoluteX="458dp"
+            tools:layout_editor_absoluteY="250dp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            app:srcCompat="@drawable/finalplusbutton"
+            tools:layout_editor_absoluteX="458dp"
+            tools:layout_editor_absoluteY="325dp" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            app:srcCompat="@drawable/finalplusbutton"
+            tools:layout_editor_absoluteX="458dp"
+            tools:layout_editor_absoluteY="400dp" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            app:srcCompat="@drawable/finalplusbutton"
+            tools:layout_editor_absoluteX="458dp"
+            tools:layout_editor_absoluteY="175dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
