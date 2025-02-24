@@ -1,9 +1,9 @@
 package com.example.aquaanalyzomatic;
 
 //import static androidx.constraintlayout.helper.widget.motionScene.TAG;
-import static androidx.constraintlayout.motion.widget.MotionScene.TAG;
 
 import androidx.appcompat.app.AppCompatActivity;
+
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -104,14 +104,20 @@ public class SignInScreen extends AppCompatActivity {
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
+                        final String TAG = "SignInScreen";
+
                         if (task.isSuccessful()) {
                             // Sign in success, update UI with the signed-in user's information
-                            Log.d(TAG, "signInWithEmail:success");
+
+
+
+
+                            Log.d(TAG,"signInWithEmail:success");
                             FirebaseUser user = auth.getCurrentUser();
                             updateUI(user);
                         } else {
                             // If sign in fails, display a message to the user.
-                            Log.w(TAG, "signInWithEmail:failure", task.getException());
+                            Log.w(TAG,"signInWithEmail:failure", task.getException());
                             frameLayout.setVisibility(View.INVISIBLE);
                             progressBar.setVisibility(View.INVISIBLE);
                             Toast.makeText(SignInScreen.this, "Authentication failed.",
