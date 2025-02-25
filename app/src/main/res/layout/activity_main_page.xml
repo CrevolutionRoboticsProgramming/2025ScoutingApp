@@ -10,7 +10,7 @@
     android:foregroundTint="#EFB821">
 
     <Button
-        android:id="@+id/autonLayoutBtn2"
+        android:id="@+id/autonLayoutBtn"
         android:layout_width="243dp"
         android:layout_height="166dp"
         android:backgroundTint="#EFB821"
@@ -67,7 +67,7 @@
         android:fontFamily="@font/montserrat_extralight"
         android:foregroundTint="#000000"
         android:text="@string/SignOutBtn"
-        android:textSize="30sp"
+        android:textSize="25sp"
         app:iconTint="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/textView"
@@ -78,7 +78,7 @@
         app:strokeWidth="2dp" />
 
     <ImageView
-        android:id="@+id/NetScoredMinus"
+        android:id="@+id/TeleNetScoredMinus"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginStart="787dp"
@@ -115,7 +115,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
-        android:id="@+id/ProcessedPlus"
+        android:id="@+id/TeleProcessedPlus"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginStart="932dp"
@@ -132,7 +132,7 @@
         app:tint="#7DBBE7" />
 
     <EditText
-        android:id="@+id/NetScoredNum"
+        android:id="@+id/TeleNetScoredNum"
         android:layout_width="72dp"
         android:layout_height="75dp"
         android:layout_marginStart="862dp"
@@ -159,7 +159,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/ProcessedNum"
+        android:id="@+id/TeleProcessedNum"
         android:layout_width="68dp"
         android:layout_height="75dp"
         android:layout_marginStart="862dp"
@@ -186,7 +186,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
-        android:id="@+id/NetAttemptsMinus"
+        android:id="@+id/TeleNetAttemptsMinus"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginStart="787dp"
@@ -205,7 +205,7 @@
         app:tint="#EFB821" />
 
     <EditText
-        android:id="@+id/NetAttemptsNum"
+        android:id="@+id/TeleNetAttemptsNum"
         android:layout_width="73dp"
         android:layout_height="77dp"
         android:layout_marginStart="862dp"
@@ -252,7 +252,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
-        android:id="@+id/ProcessedMinus"
+        android:id="@+id/TeleProcessedMinus"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginStart="785dp"
@@ -269,7 +269,7 @@
         app:tint="#7DBBE7" />
 
     <ImageView
-        android:id="@+id/NetScoredPlus"
+        android:id="@+id/TeleNetScoredPlus"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginStart="933dp"
@@ -286,7 +286,7 @@
         app:tint="#EFB821" />
 
     <ImageView
-        android:id="@+id/NetAttemptsPlus"
+        android:id="@+id/TeleNetAttemptsPlus"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginStart="933dp"
@@ -303,7 +303,7 @@
         app:tint="#EFB821" />
 
     <ImageView
-        android:id="@+id/MinusL3"
+        android:id="@+id/TeleMinusL3"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginStart="103dp"
@@ -340,7 +340,7 @@
         app:layout_constraintVertical_bias="0.03" />
 
     <EditText
-        android:id="@+id/NumL4"
+        android:id="@+id/TeleNumL4"
         android:layout_width="70dp"
         android:layout_height="75dp"
         android:layout_marginStart="178dp"
@@ -367,7 +367,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/NumL3"
+        android:id="@+id/TeleNumL3"
         android:layout_width="70dp"
         android:layout_height="75dp"
         android:layout_marginStart="178dp"
@@ -394,7 +394,7 @@
         app:layout_constraintVertical_bias="0.03" />
 
     <ImageView
-        android:id="@+id/PlusL3"
+        android:id="@+id/TelePlusL3"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginStart="249dp"
@@ -431,7 +431,7 @@
         app:layout_constraintVertical_bias="0.03" />
 
     <ImageView
-        android:id="@+id/MinusL4"
+        android:id="@+id/TeleMinusL4"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginStart="103dp"
@@ -448,7 +448,7 @@
         app:tint="#7DBBE7" />
 
     <EditText
-        android:id="@+id/NumL1"
+        android:id="@+id/TeleNumL1"
         android:layout_width="70dp"
         android:layout_height="75dp"
         android:layout_marginStart="177dp"
@@ -475,7 +475,7 @@
         app:layout_constraintVertical_bias="0.03" />
 
     <ImageView
-        android:id="@+id/MinusL1"
+        android:id="@+id/TeleMinusL1"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginStart="103dp"
@@ -492,7 +492,7 @@
         app:tint="#EFB821" />
 
     <ImageView
-        android:id="@+id/PlusL2"
+        android:id="@+id/TelePlusL2"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginStart="249dp"
@@ -509,7 +509,7 @@
         app:tint="#7DBBE7" />
 
     <ImageView
-        android:id="@+id/PlusL4"
+        android:id="@+id/TelePlusL4"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginStart="249dp"
@@ -521,7 +521,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.351"
+        app:layout_constraintVertical_bias="0.37"
         app:srcCompat="@drawable/finalplusbutton"
         app:tint="#7DBBE7" />
 
@@ -566,7 +566,7 @@
         app:layout_constraintVertical_bias="0.03" />
 
     <ImageView
-        android:id="@+id/MinusL2"
+        android:id="@+id/TeleMinusL2"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginStart="103dp"
@@ -583,7 +583,7 @@
         app:tint="#7DBBE7" />
 
     <EditText
-        android:id="@+id/NumL2"
+        android:id="@+id/TeleNumL2"
         android:layout_width="70dp"
         android:layout_height="76dp"
         android:layout_marginStart="178dp"
@@ -610,7 +610,7 @@
         app:layout_constraintVertical_bias="0.03" />
 
     <ImageView
-        android:id="@+id/PlusL1"
+        android:id="@+id/TelePlusL1"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginStart="249dp"
@@ -802,7 +802,7 @@
         app:layout_constraintVertical_bias="0.969" />
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/CheckHumanPlayer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/montserrat_semibold"
@@ -816,11 +816,22 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.992" />
 
-    <androidx.constraintlayout.widget.Group
-        android:id="@+id/group"
+    <EditText
+        android:id="@+id/Username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:visibility="gone" />
+        android:layout_marginStart="167dp"
+        android:layout_marginTop="539dp"
+        android:layout_marginEnd="647dp"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
@@ -831,13 +842,12 @@
         android:background="#2C2929"
         android:backgroundTint="#000000"
         android:foregroundTint="#000000"
-        android:visibility="gone"
+        android:visibility=""
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:visibility="gone">
+        app:layout_constraintEnd_toEndOf="parent">
 
         <ImageView
-            android:id="@+id/plusL"
+            android:id="@+id/AutonPlusL1"
             android:layout_width="65dp"
             android:layout_height="65dp"
             android:layout_marginStart="225dp"
@@ -872,7 +882,7 @@
             app:layout_constraintVertical_bias="0.487" />
 
         <EditText
-            android:id="@+id/numL"
+            android:id="@+id/AutonNumL1"
             android:layout_width="70dp"
             android:layout_height="75dp"
             android:layout_marginStart="154dp"
@@ -897,7 +907,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/numL2"
+            android:id="@+id/AutonNumL2"
             android:layout_width="70dp"
             android:layout_height="76dp"
             android:layout_marginStart="154dp"
@@ -922,7 +932,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
-            android:id="@+id/minusL2"
+            android:id="@+id/AutonMinusL2"
             android:layout_width="65dp"
             android:layout_height="65dp"
             android:layout_marginStart="79dp"
@@ -957,7 +967,7 @@
             app:layout_constraintVertical_bias="0.487" />
 
         <ImageView
-            android:id="@+id/minusL3"
+            android:id="@+id/AutonMinusL3"
             android:layout_width="65dp"
             android:layout_height="65dp"
             android:layout_marginStart="79dp"
@@ -988,7 +998,7 @@
             app:layout_constraintVertical_bias="0.359" />
 
         <EditText
-            android:id="@+id/numL3"
+            android:id="@+id/AutonNumL3"
             android:layout_width="70dp"
             android:layout_height="75dp"
             android:layout_marginStart="154dp"
@@ -1013,7 +1023,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
-            android:id="@+id/plusL2"
+            android:id="@+id/AutonPlusL3"
             android:layout_width="65dp"
             android:layout_height="65dp"
             android:layout_marginStart="225dp"
@@ -1028,22 +1038,22 @@
             app:tint="#EFB821" />
 
         <ImageView
-            android:id="@+id/plusL3"
+            android:id="@+id/AutonPlusL2"
             android:layout_width="65dp"
             android:layout_height="65dp"
             android:layout_marginStart="225dp"
             android:layout_marginTop="263dp"
             android:layout_marginEnd="690dp"
             android:layout_marginBottom="237dp"
-            app:tint="#7DBBE7"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/finalplusbutton" />
+            app:srcCompat="@drawable/finalplusbutton"
+            app:tint="#7DBBE7" />
 
         <ImageView
-            android:id="@+id/plusL4"
+            android:id="@+id/AutonPlusL4"
             android:layout_width="65dp"
             android:layout_height="65dp"
             android:layout_marginStart="225dp"
@@ -1052,18 +1062,18 @@
             android:layout_marginBottom="387dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.481"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.548"
+            app:layout_constraintVertical_bias="0.412"
             app:srcCompat="@drawable/finalplusbutton"
             app:tint="#7DBBE7" />
 
         <EditText
-            android:id="@+id/numL4"
+            android:id="@+id/AutonNumL4"
             android:layout_width="70dp"
             android:layout_height="75dp"
-            android:layout_marginStart="154dp"
+            android:layout_marginStart="160dp"
             android:layout_marginTop="113dp"
             android:layout_marginBottom="387dp"
             android:clickable="false"
@@ -1080,10 +1090,11 @@
             android:textSize="40dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.452" />
 
         <ImageView
-            android:id="@+id/minusL4"
+            android:id="@+id/AutonMinusL4"
             android:layout_width="65dp"
             android:layout_height="65dp"
             android:layout_marginStart="79dp"
@@ -1092,10 +1103,10 @@
             android:layout_marginBottom="387dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.518"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.451"
+            app:layout_constraintVertical_bias="0.428"
             app:srcCompat="@drawable/finalminusbutton"
             app:tint="#7DBBE7" />
 
@@ -1202,14 +1213,14 @@
             android:layout_marginTop="186dp"
             android:layout_marginEnd="152dp"
             android:layout_marginBottom="314dp"
-            app:tint="#EFB821"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.46"
-            app:srcCompat="@drawable/finalminusbutton" />
+            app:srcCompat="@drawable/finalminusbutton"
+            app:tint="#EFB821" />
 
         <EditText
             android:id="@+id/netScoredNum"
@@ -1354,19 +1365,19 @@
             app:tint="#EFB821" />
 
         <ImageView
-            android:id="@+id/minusL"
+            android:id="@+id/AutonMinusL1"
             android:layout_width="65dp"
             android:layout_height="65dp"
             android:layout_marginStart="79dp"
             android:layout_marginTop="338dp"
             android:layout_marginEnd="836dp"
             android:layout_marginBottom="162dp"
-            app:tint="#EFB821"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/finalminusbutton" />
+            app:srcCompat="@drawable/finalminusbutton"
+            app:tint="#EFB821" />
 
         <CheckBox
             android:id="@+id/CheckLeaveStart"
@@ -1385,27 +1396,8 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.677"
+            app:layout_constraintVertical_bias="0.015"
             tools:text=" Leaves start?" />
-
-        <CheckBox
-            android:id="@+id/CheckAuton"
-            android:layout_width="225dp"
-            android:layout_height="75dp"
-            android:layout_marginTop="494dp"
-            android:layout_marginEnd="766dp"
-            android:layout_marginBottom="3dp"
-            android:fontFamily="@font/montserrat_semibold"
-            android:text="@string/CheckAuton"
-            android:textAlignment="center"
-            android:textColor="#7DBBE7"
-            android:textSize="30sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

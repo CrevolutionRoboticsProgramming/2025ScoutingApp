@@ -15,6 +15,7 @@ public class mainPage extends AppCompatActivity {
     private ImageView L1Minus, L1Plus, L2Minus, L2Plus, L3Minus, L3Plus, L4Minus, L4Plus, netShotsMinus, netShotsPlus, netScoredMinus,
             netScoredPlus, HPShotMinus, HPShotPlus, HPScoredMinus, HPScoredPlus, processedMinus, processedPlus;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,10 +29,18 @@ public class mainPage extends AppCompatActivity {
         // -------------------- Auton Vars -------------------- //
 
 
+
         // -------------------- TeleOp Vars -------------------- //
 
 
+
+        // -------------------- TeleOp Vars -------------------- //
+
+
+
         // -------------------- Match Data Vars -------------------- //
+
+
 
     }
 }
