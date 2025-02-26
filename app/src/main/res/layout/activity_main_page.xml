@@ -11,7 +11,7 @@
     android:foregroundTint="#EFB821">
 
     <Button
-        android:id="@+id/autonLayoutBtn2"
+        android:id="@+id/autonLayoutBtn"
         android:layout_width="243dp"
         android:layout_height="166dp"
         android:backgroundTint="#EFB821"
@@ -68,7 +68,7 @@
         android:fontFamily="@font/montserrat_extralight"
         android:foregroundTint="#000000"
         android:text="@string/SignOutBtn"
-        android:textSize="30sp"
+        android:textSize="25sp"
         app:iconTint="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/textView"
@@ -522,7 +522,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.351"
+        app:layout_constraintVertical_bias="0.37"
         app:srcCompat="@drawable/finalplusbutton"
         app:tint="#7DBBE7" />
 
@@ -835,7 +835,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/CheckHumanPlayer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/montserrat_semibold"
@@ -849,11 +849,22 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.992" />
 
-    <androidx.constraintlayout.widget.Group
-        android:id="@+id/group"
+    <EditText
+        android:id="@+id/Username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:visibility="gone" />
+        android:layout_marginStart="167dp"
+        android:layout_marginTop="539dp"
+        android:layout_marginEnd="647dp"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
@@ -864,10 +875,9 @@
         android:background="#2C2929"
         android:backgroundTint="#000000"
         android:foregroundTint="#000000"
-        android:visibility="gone"
+        android:visibility=""
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:visibility="gone">
+        app:layout_constraintEnd_toEndOf="parent">
 
         <ImageView
             android:id="@+id/AutonPlusL1"
@@ -1085,10 +1095,10 @@
             android:layout_marginBottom="387dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.481"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.548"
+            app:layout_constraintVertical_bias="0.412"
             app:srcCompat="@drawable/finalplusbutton"
             app:tint="#7DBBE7" />
 
@@ -1096,7 +1106,7 @@
             android:id="@+id/AutonNumL4"
             android:layout_width="70dp"
             android:layout_height="75dp"
-            android:layout_marginStart="154dp"
+            android:layout_marginStart="160dp"
             android:layout_marginTop="113dp"
             android:layout_marginBottom="387dp"
             android:clickable="false"
@@ -1113,7 +1123,8 @@
             android:textSize="40dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.452" />
 
         <ImageView
             android:id="@+id/AutonMinusL4"
@@ -1125,10 +1136,10 @@
             android:layout_marginBottom="387dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.518"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.451"
+            app:layout_constraintVertical_bias="0.428"
             app:srcCompat="@drawable/finalminusbutton"
             app:tint="#7DBBE7" />
 
@@ -1419,27 +1430,8 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.677"
+            app:layout_constraintVertical_bias="0.015"
             tools:text=" Leaves start?" />
-
-        <CheckBox
-            android:id="@+id/CheckAuton"
-            android:layout_width="225dp"
-            android:layout_height="75dp"
-            android:layout_marginTop="494dp"
-            android:layout_marginEnd="766dp"
-            android:layout_marginBottom="3dp"
-            android:fontFamily="@font/montserrat_semibold"
-            android:text="@string/CheckAuton"
-            android:textAlignment="center"
-            android:textColor="#7DBBE7"
-            android:textSize="30sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

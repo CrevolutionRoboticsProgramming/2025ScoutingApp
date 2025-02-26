@@ -37,6 +37,7 @@ public class mainPage extends AppCompatActivity {
     private CheckBox CheckHumanPlayer, CheckParking, CheckShallowClimb, CheckDeepClimb, CheckLeaveStart;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -91,7 +92,13 @@ public class mainPage extends AppCompatActivity {
         View teleProcessedMinus = findViewById(R.id.TeleProcessedMinus);
 
 
+
         // -------------------- TeleOp Vars -------------------- //
+
+
+
+        // -------------------- TeleOp Vars -------------------- //
+
 
 
         // -------------------- Match Data Vars -------------------- //
@@ -350,6 +357,8 @@ public class mainPage extends AppCompatActivity {
                 changeNum(autonProcessedNum, "up");
             }
         });
+
+
 
     }
 
