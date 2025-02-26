@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
 
+    android:id="@+id/MainPage"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#000000"
@@ -438,7 +439,7 @@
         android:layout_marginTop="37dp"
         android:layout_marginEnd="846dp"
         android:backgroundTint="#7DBBE7"
-        app:layout_constraintBottom_toTopOf="@+id/MinusL3"
+        app:layout_constraintBottom_toTopOf="@+id/TeleMinusL3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -800,6 +801,38 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.969" />
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="164dp"
+        android:layout_height="42dp"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:text="Processed"
+        android:textColor="#7DBBE7"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.726"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.634" />
+
+    <EditText
+        android:id="@+id/Username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="167dp"
+        android:layout_marginTop="539dp"
+        android:layout_marginEnd="647dp"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <CheckBox
         android:id="@+id/CheckHumanPlayer"
@@ -1303,7 +1336,8 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.483"
-            app:srcCompat="@drawable/finalplusbutton" />
+            app:srcCompat="@drawable/finalplusbutton"
+            app:tint="#EFB821" />
 
         <ImageView
             android:id="@+id/netAttemptsPlus"
@@ -1548,20 +1582,5 @@
             app:srcCompat="@drawable/finalplusbutton" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <TextView
-        android:id="@+id/textView37"
-        android:layout_width="164dp"
-        android:layout_height="42dp"
-        android:fontFamily="@font/montserrat_extrabold"
-        android:text="Processed"
-        android:textColor="#7DBBE7"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.176"
-        app:layout_constraintStart_toEndOf="@+id/CheckParking"
-        app:layout_constraintTop_toBottomOf="@+id/textView12"
-        app:layout_constraintVertical_bias="0.073" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
