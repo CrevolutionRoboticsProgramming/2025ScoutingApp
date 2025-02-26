@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
 
+    android:id="@+id/MainPage"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#000000"
@@ -78,7 +79,7 @@
         app:strokeWidth="2dp" />
 
     <ImageView
-        android:id="@+id/NetScoredMinus"
+        android:id="@+id/TeleNetScoredMinus"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginStart="787dp"
@@ -115,7 +116,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
-        android:id="@+id/ProcessedPlus"
+        android:id="@+id/TeleProcessedPlus"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginStart="932dp"
@@ -132,7 +133,7 @@
         app:tint="#7DBBE7" />
 
     <EditText
-        android:id="@+id/NetScoredNum"
+        android:id="@+id/TeleNetScoredNum"
         android:layout_width="72dp"
         android:layout_height="75dp"
         android:layout_marginStart="862dp"
@@ -159,7 +160,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/ProcessedNum"
+        android:id="@+id/TeleProcessedNum"
         android:layout_width="68dp"
         android:layout_height="75dp"
         android:layout_marginStart="862dp"
@@ -186,7 +187,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
-        android:id="@+id/NetAttemptsMinus"
+        android:id="@+id/TeleNetAttemptsMinus"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginStart="787dp"
@@ -205,7 +206,7 @@
         app:tint="#EFB821" />
 
     <EditText
-        android:id="@+id/NetAttemptsNum"
+        android:id="@+id/TeleNetAttemptsNum"
         android:layout_width="73dp"
         android:layout_height="77dp"
         android:layout_marginStart="862dp"
@@ -252,7 +253,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
-        android:id="@+id/ProcessedMinus"
+        android:id="@+id/TeleProcessedMinus"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginStart="785dp"
@@ -269,7 +270,7 @@
         app:tint="#7DBBE7" />
 
     <ImageView
-        android:id="@+id/NetScoredPlus"
+        android:id="@+id/TeleNetScoredPlus"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginStart="933dp"
@@ -286,7 +287,7 @@
         app:tint="#EFB821" />
 
     <ImageView
-        android:id="@+id/NetAttemptsPlus"
+        android:id="@+id/TeleNetAttemptsPlus"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginStart="933dp"
@@ -303,7 +304,7 @@
         app:tint="#EFB821" />
 
     <ImageView
-        android:id="@+id/MinusL3"
+        android:id="@+id/TeleMinusL3"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginStart="103dp"
@@ -340,7 +341,7 @@
         app:layout_constraintVertical_bias="0.03" />
 
     <EditText
-        android:id="@+id/NumL4"
+        android:id="@+id/TeleNumL4"
         android:layout_width="70dp"
         android:layout_height="75dp"
         android:layout_marginStart="178dp"
@@ -367,7 +368,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/NumL3"
+        android:id="@+id/TeleNumL3"
         android:layout_width="70dp"
         android:layout_height="75dp"
         android:layout_marginStart="178dp"
@@ -394,7 +395,7 @@
         app:layout_constraintVertical_bias="0.03" />
 
     <ImageView
-        android:id="@+id/PlusL3"
+        android:id="@+id/TelePlusL3"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginStart="249dp"
@@ -431,14 +432,14 @@
         app:layout_constraintVertical_bias="0.03" />
 
     <ImageView
-        android:id="@+id/MinusL4"
+        android:id="@+id/TeleMinusL4"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginStart="103dp"
         android:layout_marginTop="37dp"
         android:layout_marginEnd="846dp"
         android:backgroundTint="#7DBBE7"
-        app:layout_constraintBottom_toTopOf="@+id/MinusL3"
+        app:layout_constraintBottom_toTopOf="@+id/TeleMinusL3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -448,7 +449,7 @@
         app:tint="#7DBBE7" />
 
     <EditText
-        android:id="@+id/NumL1"
+        android:id="@+id/TeleNumL1"
         android:layout_width="70dp"
         android:layout_height="75dp"
         android:layout_marginStart="177dp"
@@ -475,7 +476,7 @@
         app:layout_constraintVertical_bias="0.03" />
 
     <ImageView
-        android:id="@+id/MinusL1"
+        android:id="@+id/TeleMinusL1"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginStart="103dp"
@@ -492,7 +493,7 @@
         app:tint="#EFB821" />
 
     <ImageView
-        android:id="@+id/PlusL2"
+        android:id="@+id/TelePlusL2"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginStart="249dp"
@@ -509,7 +510,7 @@
         app:tint="#7DBBE7" />
 
     <ImageView
-        android:id="@+id/PlusL4"
+        android:id="@+id/TelePlusL4"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginStart="249dp"
@@ -566,7 +567,7 @@
         app:layout_constraintVertical_bias="0.03" />
 
     <ImageView
-        android:id="@+id/MinusL2"
+        android:id="@+id/TeleMinusL2"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginStart="103dp"
@@ -583,7 +584,7 @@
         app:tint="#7DBBE7" />
 
     <EditText
-        android:id="@+id/NumL2"
+        android:id="@+id/TeleNumL2"
         android:layout_width="70dp"
         android:layout_height="76dp"
         android:layout_marginStart="178dp"
@@ -610,7 +611,7 @@
         app:layout_constraintVertical_bias="0.03" />
 
     <ImageView
-        android:id="@+id/PlusL1"
+        android:id="@+id/TelePlusL1"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginStart="249dp"
@@ -801,6 +802,38 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.969" />
 
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="164dp"
+        android:layout_height="42dp"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:text="Processed"
+        android:textColor="#7DBBE7"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.726"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.634" />
+
+    <EditText
+        android:id="@+id/Username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="167dp"
+        android:layout_marginTop="539dp"
+        android:layout_marginEnd="647dp"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <CheckBox
         android:id="@+id/checkBox"
         android:layout_width="wrap_content"
@@ -837,7 +870,7 @@
         tools:visibility="gone">
 
         <ImageView
-            android:id="@+id/plusL"
+            android:id="@+id/AutonPlusL1"
             android:layout_width="65dp"
             android:layout_height="65dp"
             android:layout_marginStart="225dp"
@@ -872,7 +905,7 @@
             app:layout_constraintVertical_bias="0.487" />
 
         <EditText
-            android:id="@+id/numL"
+            android:id="@+id/AutonNumL1"
             android:layout_width="70dp"
             android:layout_height="75dp"
             android:layout_marginStart="154dp"
@@ -897,7 +930,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/numL2"
+            android:id="@+id/AutonNumL2"
             android:layout_width="70dp"
             android:layout_height="76dp"
             android:layout_marginStart="154dp"
@@ -922,7 +955,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
-            android:id="@+id/minusL2"
+            android:id="@+id/AutonMinusL2"
             android:layout_width="65dp"
             android:layout_height="65dp"
             android:layout_marginStart="79dp"
@@ -957,7 +990,7 @@
             app:layout_constraintVertical_bias="0.487" />
 
         <ImageView
-            android:id="@+id/minusL3"
+            android:id="@+id/AutonMinusL3"
             android:layout_width="65dp"
             android:layout_height="65dp"
             android:layout_marginStart="79dp"
@@ -988,7 +1021,7 @@
             app:layout_constraintVertical_bias="0.359" />
 
         <EditText
-            android:id="@+id/numL3"
+            android:id="@+id/AutonNumL3"
             android:layout_width="70dp"
             android:layout_height="75dp"
             android:layout_marginStart="154dp"
@@ -1013,7 +1046,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
-            android:id="@+id/plusL2"
+            android:id="@+id/AutonPlusL3"
             android:layout_width="65dp"
             android:layout_height="65dp"
             android:layout_marginStart="225dp"
@@ -1028,22 +1061,22 @@
             app:tint="#EFB821" />
 
         <ImageView
-            android:id="@+id/plusL3"
+            android:id="@+id/AutonPlusL2"
             android:layout_width="65dp"
             android:layout_height="65dp"
             android:layout_marginStart="225dp"
             android:layout_marginTop="263dp"
             android:layout_marginEnd="690dp"
             android:layout_marginBottom="237dp"
-            app:tint="#7DBBE7"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/finalplusbutton" />
+            app:srcCompat="@drawable/finalplusbutton"
+            app:tint="#7DBBE7" />
 
         <ImageView
-            android:id="@+id/plusL4"
+            android:id="@+id/AutonPlusL4"
             android:layout_width="65dp"
             android:layout_height="65dp"
             android:layout_marginStart="225dp"
@@ -1060,7 +1093,7 @@
             app:tint="#7DBBE7" />
 
         <EditText
-            android:id="@+id/numL4"
+            android:id="@+id/AutonNumL4"
             android:layout_width="70dp"
             android:layout_height="75dp"
             android:layout_marginStart="154dp"
@@ -1083,7 +1116,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
-            android:id="@+id/minusL4"
+            android:id="@+id/AutonMinusL4"
             android:layout_width="65dp"
             android:layout_height="65dp"
             android:layout_marginStart="79dp"
@@ -1202,14 +1235,14 @@
             android:layout_marginTop="186dp"
             android:layout_marginEnd="152dp"
             android:layout_marginBottom="314dp"
-            app:tint="#EFB821"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.46"
-            app:srcCompat="@drawable/finalminusbutton" />
+            app:srcCompat="@drawable/finalminusbutton"
+            app:tint="#EFB821" />
 
         <EditText
             android:id="@+id/netScoredNum"
@@ -1292,7 +1325,8 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.483"
-            app:srcCompat="@drawable/finalplusbutton" />
+            app:srcCompat="@drawable/finalplusbutton"
+            app:tint="#EFB821" />
 
         <ImageView
             android:id="@+id/netAttemptsPlus"
@@ -1354,19 +1388,19 @@
             app:tint="#EFB821" />
 
         <ImageView
-            android:id="@+id/minusL"
+            android:id="@+id/AutonMinusL1"
             android:layout_width="65dp"
             android:layout_height="65dp"
             android:layout_marginStart="79dp"
             android:layout_marginTop="338dp"
             android:layout_marginEnd="836dp"
             android:layout_marginBottom="162dp"
-            app:tint="#EFB821"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/finalminusbutton" />
+            app:srcCompat="@drawable/finalminusbutton"
+            app:tint="#EFB821" />
 
         <CheckBox
             android:id="@+id/CheckLeaveStart"
@@ -1556,20 +1590,5 @@
             app:srcCompat="@drawable/finalplusbutton" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <TextView
-        android:id="@+id/textView37"
-        android:layout_width="164dp"
-        android:layout_height="42dp"
-        android:fontFamily="@font/montserrat_extrabold"
-        android:text="Processed"
-        android:textColor="#7DBBE7"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.176"
-        app:layout_constraintStart_toEndOf="@+id/CheckParking"
-        app:layout_constraintTop_toBottomOf="@+id/textView12"
-        app:layout_constraintVertical_bias="0.073" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
