@@ -1,5 +1,8 @@
 package com.example.aquaanalyzomatic;
+import android.content.Context;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -9,6 +12,8 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.constraintlayout.widget.ConstraintSet;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -30,7 +35,7 @@ public class mainPage extends AppCompatActivity {
             autonMinusL1, autonMinusL2, autonMinusL3, autonMinusL4, autonPlusL1, autonPlusL2, autonPlusL3, autonPlusL4,
             netAttemptsMinus, netAttemptsPlus, netScoredMinus, netScoredPlus, autonProcessedPlus, autonProcessedMinus;
     private CheckBox checkHumanPlayer, checkParking, checkShallowClimb, checkDeepClimb, checkLeaveStart;
-    private FrameLayout autonLayout;
+    private ConstraintLayout autonLayout;
 
 
 
@@ -43,8 +48,11 @@ public class mainPage extends AppCompatActivity {
         Intent intent = getIntent();
         String username = intent.getStringExtra("username");
 
-        FirebaseDatabase firebase = FirebaseDatabase.getInstance();
-        DatabaseReference data = firebase.getReference("matchData");
+        database = FirebaseDatabase.getInstance();
+        data = database.getReference("matchData");
+
+        auth = FirebaseAuth.getInstance();
+        auth.addAuthStateListener(authStateListener);
 
 
         // -------------------- Auton Vars -------------------- //
@@ -380,6 +388,14 @@ public class mainPage extends AppCompatActivity {
 
     }
 
+    public void onStart(){
+        super.onStart();
+        FirebaseUser currentuser = auth.getCurrentUser();
+        if(currentuser != null){
+
+        }
+    }
+
     public void autonPage(Boolean Switch){
         if (Switch){
             autonLayout.setVisibility(View.VISIBLE);
@@ -454,6 +470,26 @@ public class mainPage extends AppCompatActivity {
             i++;
             shots.setText(Integer.toString(i));
         }
+    }
+
+    FirebaseAuth.AuthStateListener authStateListener = firebaseAuth -> {
+        if (auth.getCurrentUser() == null){
+            signOutComplete();
+        }
+    };
+    public void signOutComplete(){
+        ConnectivityManager cm = (ConnectivityManager)getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
+        boolean isConnected = activeNetwork != null && activeNetwork.isConnectedOrConnecting();
+        if(isConnected) {
+            Intent changeScreen = new Intent(mainPage.this, SignInScreen.class);
+            startActivity(changeScreen);
+        }
+    }
+
+    public void reload(){
+        Intent resetScreen = new Intent(mainPage.this, mainPage.class);
+        startActivity(resetScreen);
     }
 }
 
