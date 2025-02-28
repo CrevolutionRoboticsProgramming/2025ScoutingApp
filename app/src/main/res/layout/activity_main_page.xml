@@ -28,7 +28,7 @@
         app:layout_constraintVertical_bias="0.318"
         app:strokeColor="#7DBBE7"
         app:strokeWidth="4dp"
-        tools:text="AUTON FIELD" />
+        tools:text="AUTON PAGE" />
 
     <ImageButton
         android:id="@+id/imageButton3"
@@ -827,7 +827,7 @@
         android:layout_marginBottom="15dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Name"
+        android:clickable="false"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -849,33 +849,15 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.992" />
 
-    <EditText
-        android:id="@+id/Username"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="167dp"
-        android:layout_marginTop="539dp"
-        android:layout_marginEnd="647dp"
-        android:layout_marginBottom="15dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Name"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout"
-        android:layout_width="1007dp"
-        android:layout_height="502dp"
-        android:layout_marginEnd="8dp"
+        android:id="@+id/autonLayout"
+        android:layout_width="1019dp"
+        android:layout_height="501dp"
         android:layout_marginBottom="4dp"
         android:background="#2C2929"
         android:backgroundTint="#000000"
         android:foregroundTint="#000000"
-        android:visibility=""
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
@@ -1433,15 +1415,30 @@
             app:layout_constraintVertical_bias="0.015"
             tools:text=" Leaves start?" />
 
+        <Button
+            android:id="@+id/backToTele"
+            android:layout_width="240dp"
+            android:layout_height="144dp"
+            android:layout_marginStart="347dp"
+            android:layout_marginTop="57dp"
+            android:layout_marginEnd="420dp"
+            android:layout_marginBottom="301dp"
+            android:text="@string/BackBtn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/frameLayout2"
-        android:layout_width="400dp"
-        android:layout_height="200dp"
-        android:layout_marginStart="612dp"
-        android:layout_marginTop="413dp"
-        android:layout_marginEnd="12dp"
+        android:id="@+id/humanPlayerLayout"
+        android:layout_width="410dp"
+        android:layout_height="137dp"
+        android:layout_marginStart="606dp"
+        android:layout_marginTop="416dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="47dp"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -1452,8 +1449,10 @@
             android:id="@+id/textView16"
             android:layout_width="175dp"
             android:layout_height="75dp"
-            android:layout_marginEnd="225dp"
-            android:layout_marginBottom="75dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="230dp"
+            android:layout_marginBottom="55dp"
             android:text="@string/NetHumanScored"
             android:textAlignment="center"
             android:textColor="@color/white"
