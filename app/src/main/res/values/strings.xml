@@ -19,6 +19,7 @@
     <string name="AutonCoralL2">L2</string>
     <string name="AutonCoralL3">L3</string>
     <string name="AutonCoralL4">L4</string>
+    <string name="BackBtn">Back To Teleop</string>
 
     <!-- Tele-Op Strings -->
     <string name="CheckHumanPlayer">Human Player?</string>

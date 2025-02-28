@@ -4,10 +4,10 @@
     <selectionStates>
       <SelectionState runConfigName="app">
         <option name="selectionMode" value="DROPDOWN" />
-        <DropdownSelection timestamp="2025-02-04T00:44:57.108070078Z">
+        <DropdownSelection timestamp="2025-02-27T00:11:27.411912900Z">
           <Target type="DEFAULT_BOOT">
             <handle>
-              <DeviceId pluginId="LocalEmulator" identifier="path=/home/dbatou/.android/avd/Scouting_Tablet_API_35.avd" />
+              <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\janue\.android\avd\appDevTablet_API_31.avd" />
             </handle>
           </Target>
         </DropdownSelection>
