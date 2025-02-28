@@ -29,7 +29,7 @@ public class mainPage extends AppCompatActivity {
             teleNetScoredPlus, humanPlayerAttemptsMinus, humanPlayerAttemptsPlus, humanPlayerScoredMinus, humanPlayerScoredPlus, teleProcessedMinus, teleProcessedPlus,
             autonMinusL1, autonMinusL2, autonMinusL3, autonMinusL4, autonPlusL1, autonPlusL2, autonPlusL3, autonPlusL4,
             netAttemptsMinus, netAttemptsPlus, netScoredMinus, netScoredPlus, autonProcessedPlus, autonProcessedMinus;
-    private CheckBox CheckHumanPlayer, CheckParking, CheckShallowClimb, CheckDeepClimb, CheckLeaveStart;
+    private CheckBox checkHumanPlayer, checkParking, checkShallowClimb, checkDeepClimb, checkLeaveStart;
     private FrameLayout autonLayout;
 
 
@@ -88,10 +88,10 @@ public class mainPage extends AppCompatActivity {
         teleProcessedPlus = findViewById(R.id.TeleProcessedPlus);
         teleProcessedMinus = findViewById(R.id.TeleProcessedMinus);
 
-        CheckHumanPlayer = findViewById(R.id.CheckHumanPlayer);
-        CheckDeepClimb = findViewById(R.id.CheckDeepClimb);
-        CheckParking = findViewById(R.id.CheckParking);
-        CheckShallowClimb = findViewById(R.id.CheckShallowClimb);
+        checkHumanPlayer = findViewById(R.id.CheckHumanPlayer);
+        checkDeepClimb = findViewById(R.id.CheckDeepClimb);
+        checkParking = findViewById(R.id.CheckParking);
+        checkShallowClimb = findViewById(R.id.CheckShallowClimb);
 
 
         // -------------------- Match Data Vars -------------------- //
@@ -400,10 +400,10 @@ public class mainPage extends AppCompatActivity {
             teleNetAttemptsPlus.setEnabled(false);
             teleNetScoredMinus.setEnabled(false);
             teleNetScoredPlus.setEnabled(false);
-            CheckHumanPlayer.setEnabled(false);
-            CheckParking.setEnabled(false);
-            CheckShallowClimb.setEnabled(false);
-            CheckDeepClimb.setEnabled(false);
+            checkHumanPlayer.setEnabled(false);
+            checkParking.setEnabled(false);
+            checkShallowClimb.setEnabled(false);
+            checkDeepClimb.setEnabled(false);
         } else {
             autonLayout.setVisibility(View.GONE);
             submitBtn.setEnabled(true);
@@ -423,10 +423,10 @@ public class mainPage extends AppCompatActivity {
             teleNetAttemptsPlus.setEnabled(true);
             teleNetScoredMinus.setEnabled(true);
             teleNetScoredPlus.setEnabled(true);
-            CheckHumanPlayer.setEnabled(true);
-            CheckParking.setEnabled(true);
-            CheckShallowClimb.setEnabled(true);
-            CheckDeepClimb.setEnabled(true);
+            checkHumanPlayer.setEnabled(true);
+            checkParking.setEnabled(true);
+            checkShallowClimb.setEnabled(true);
+            checkDeepClimb.setEnabled(true);
         }
     }
 
