@@ -45,7 +45,7 @@ public class mainPage extends AppCompatActivity {
             autonMinusL1, autonMinusL2, autonMinusL3, autonMinusL4, autonPlusL1, autonPlusL2, autonPlusL3, autonPlusL4,
             netAttemptsMinus, netAttemptsPlus, netScoredMinus, netScoredPlus, autonProcessedPlus, autonProcessedMinus;
     private CheckBox checkHumanPlayer, checkParking, checkShallowClimb, checkDeepClimb, checkLeaveStart;
-    private ConstraintLayout autonLayout;
+    private ConstraintLayout autonLayout, humanPlayerLayout;
 
 
 
@@ -76,6 +76,7 @@ public class mainPage extends AppCompatActivity {
         autonPlusL2 = findViewById(R.id.AutonPlusL2);
         autonPlusL3 = findViewById(R.id.AutonPlusL3);
         autonPlusL4 = findViewById(R.id.AutonPlusL4);
+        checkLeaveStart = findViewById(R.id.CheckLeaveStart);
         netAttemptsMinus = findViewById(R.id.netAttemptsMinus);
         netAttemptsPlus = findViewById(R.id.netAttemptsPlus);
         netScoredMinus = findViewById(R.id.netScoredMinus);
@@ -104,6 +105,7 @@ public class mainPage extends AppCompatActivity {
         humanPlayerAttemptsPlus = findViewById(R.id.HumanPlayerAttemptsPlus);
         humanPlayerScoredMinus = findViewById(R.id.HumanPlayerScoredMinus);
         humanPlayerScoredPlus = findViewById(R.id.HumanPlayerScoredPlus);
+        humanPlayerLayout = findViewById(R.id.humanPlayerLayout);
 
         teleProcessedPlus = findViewById(R.id.TeleProcessedPlus);
         teleProcessedMinus = findViewById(R.id.TeleProcessedMinus);
@@ -150,6 +152,13 @@ public class mainPage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 submitData();
+            }
+        });
+
+        signOutBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                auth.signOut();
             }
         });
 
@@ -262,24 +271,28 @@ public class mainPage extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 changeNum(HPShotsNum, "down");
+                possibilityCheck(HPScoredNum, HPShotsNum);
             }
         });
         humanPlayerAttemptsPlus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 changeNum(HPShotsNum, "up");
+                possibilityCheck(HPShotsNum, HPScoredNum);
             }
         });
         humanPlayerScoredMinus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 changeNum(HPScoredNum, "down");
+                possibilityCheck(HPShotsNum, HPScoredNum);
             }
         });
         humanPlayerScoredPlus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 changeNum(HPScoredNum, "up");
+                possibilityCheck(HPShotsNum, HPScoredNum);
             }
         });
 
@@ -406,6 +419,37 @@ public class mainPage extends AppCompatActivity {
             }
         });
 
+        checkParking.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                checkDeepClimb.setChecked(false);
+                checkShallowClimb.setChecked(false);
+            }
+        });
+
+        checkShallowClimb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                checkParking.setChecked(false);
+                checkDeepClimb.setChecked(false);
+            }
+        });
+
+        checkDeepClimb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                checkParking.setChecked(false);
+                checkShallowClimb.setChecked(false);
+            }
+        });
+
+        checkHumanPlayer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                checkHPBox();
+            }
+        });
+
     }
 
     public void onStart(){
@@ -415,7 +459,14 @@ public class mainPage extends AppCompatActivity {
             usernameE.setText(currentuser.getDisplayName());
         }
     }
-
+    
+    public void checkHPBox(){
+        if (checkHumanPlayer.isChecked()){
+            humanPlayerLayout.setVisibility(View.VISIBLE);
+        } else {
+            humanPlayerLayout.setVisibility(View.GONE);
+        }
+    }
     public void autonPage(Boolean Switch){
         if (Switch){
             autonLayout.setVisibility(View.VISIBLE);
@@ -423,6 +474,7 @@ public class mainPage extends AppCompatActivity {
             signOutBtn.setEnabled(false);
             autonLayoutButton.setVisibility(View.GONE);
             backToTeleBtn.setVisibility(View.VISIBLE);
+            humanPlayerLayout.setVisibility(View.GONE);
             //teleop buttons
             teleMinusL1.setEnabled(false);
             teleMinusL2.setEnabled(false);
@@ -446,6 +498,7 @@ public class mainPage extends AppCompatActivity {
             signOutBtn.setEnabled(true);
             autonLayoutButton.setVisibility(View.VISIBLE);
             backToTeleBtn.setVisibility(View.GONE);
+            checkHPBox();
             //teleop buttons
             teleMinusL1.setEnabled(true);
             teleMinusL2.setEnabled(true);
@@ -496,9 +549,9 @@ public class mainPage extends AppCompatActivity {
             if (checkDeepClimb.isChecked()){
                 checkDeepClimbVal = 1;
             }
-//            if (checkLeaveStart.isChecked()){
-//                checkLeaveStartVal = 1;
-//            }
+            if (checkLeaveStart.isChecked()){
+                checkLeaveStartVal = 1;
+            }
 
             matchData match = new matchData(
                     auth.getUid(),

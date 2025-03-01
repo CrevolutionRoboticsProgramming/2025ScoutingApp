@@ -30,10 +30,11 @@
         app:strokeWidth="4dp"
         tools:text="AUTON PAGE" />
 
-    <ImageButton
-        android:id="@+id/imageButton3"
-        android:layout_width="1041dp"
-        android:layout_height="93dp"
+    <ImageView
+        android:id="@+id/image3"
+        android:layout_width="1039dp"
+        android:layout_height="86dp"
+        android:contentDescription="TODO"
         android:src="@drawable/headline_yellow"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -256,16 +257,14 @@
         android:id="@+id/TeleProcessedMinus"
         android:layout_width="65dp"
         android:layout_height="65dp"
-        android:layout_marginStart="790dp"
-        android:layout_marginTop="343dp"
-        android:layout_marginEnd="164dp"
-        android:layout_marginBottom="182dp"
+        android:layout_marginStart="775dp"
+        android:layout_marginTop="363dp"
+        android:layout_marginEnd="184dp"
+        android:layout_marginBottom="172dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/finalminusbutton"
         app:tint="#7DBBE7" />
 
@@ -816,7 +815,7 @@
         app:layout_constraintHorizontal_bias="0.71"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.71000004" />
+        app:layout_constraintVertical_bias="0.668" />
 
     <EditText
         android:id="@+id/Username"
@@ -829,6 +828,7 @@
         android:clickable="false"
         android:ems="10"
         android:inputType="text"
+        android:longClickable="false"
         android:text="Anonymous"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -847,7 +847,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/imageButton3"
+        app:layout_constraintStart_toStartOf="@+id/image3"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.992" />
 
@@ -1438,12 +1438,12 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/humanPlayerLayout"
-        android:layout_width="410dp"
-        android:layout_height="137dp"
-        android:layout_marginStart="606dp"
-        android:layout_marginTop="416dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="47dp"
+        android:layout_width="403dp"
+        android:layout_height="176dp"
+        android:layout_marginStart="583dp"
+        android:layout_marginTop="405dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="19dp"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -1458,7 +1458,7 @@
             android:layout_marginTop="7dp"
             android:layout_marginEnd="230dp"
             android:layout_marginBottom="55dp"
-            android:text="@string/NetHumanScored"
+            android:text="@string/NetHumanAttempts"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="25sp"
@@ -1472,15 +1472,16 @@
             android:layout_width="175dp"
             android:layout_height="75dp"
             android:layout_marginTop="76dp"
-            android:layout_marginEnd="225dp"
-            android:text="@string/NetHumanAttempts"
+            android:text="@string/NetHumanScored"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="25sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
 
         <ImageView
             android:id="@+id/HumanPlayerAttemptsMinus"
