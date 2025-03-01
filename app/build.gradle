@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.aquaanalyzomatic"
-        minSdk 28
+        minSdk 26
         //noinspection ExpiredTargetSdkVersion
         targetSdk 34
         versionCode 1
