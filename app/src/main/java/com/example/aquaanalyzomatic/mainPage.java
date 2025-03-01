@@ -1,4 +1,5 @@
 package com.example.aquaanalyzomatic;
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.net.ConnectivityManager;
@@ -11,14 +12,23 @@ import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.constraintlayout.widget.ConstraintSet;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Locale;
+import java.util.Map;
 
 public class mainPage extends AppCompatActivity {
 
@@ -28,7 +38,7 @@ public class mainPage extends AppCompatActivity {
     private DatabaseReference data;
     private Button submitBtn, signOutBtn, autonLayoutButton, backToTeleBtn;
     private EditText teamNum, matchNum, teleL1Num, teleL2Num, teleL3Num, teleL4Num, autonL1Num, autonL2Num, autonL3Num, autonL4Num,
-            autonNetAttemptsNum, autonNetScoredNum, teleNetAttemptsNum, teleNetScoredNum, teleProcessedNum, autonProcessedNum, HPScoredNum, HPShotsNum, username;
+            autonNetAttemptsNum, autonNetScoredNum, teleNetAttemptsNum, teleNetScoredNum, teleProcessedNum, autonProcessedNum, HPScoredNum, HPShotsNum, usernameE;
 
     private ImageView teleMinusL1, teleMinusL2, teleMinusL3, teleMinusL4, telePlusL1, telePlusL2, telePlusL3, telePlusL4, teleNetAttemptsMinus, teleNetAttemptsPlus, teleNetScoredMinus,
             teleNetScoredPlus, humanPlayerAttemptsMinus, humanPlayerAttemptsPlus, humanPlayerScoredMinus, humanPlayerScoredPlus, teleProcessedMinus, teleProcessedPlus,
@@ -39,14 +49,15 @@ public class mainPage extends AppCompatActivity {
 
 
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_page);
 
         // Retrieve the data passed from SignInScreen
-        Intent intent = getIntent();
-        String username = intent.getStringExtra("username");
+        //Intent intent = getIntent();
+        //String username = intent.getStringExtra("username");
 
         database = FirebaseDatabase.getInstance();
         data = database.getReference("matchData");
@@ -54,6 +65,7 @@ public class mainPage extends AppCompatActivity {
         auth = FirebaseAuth.getInstance();
         auth.addAuthStateListener(authStateListener);
 
+        usernameE = findViewById(R.id.Username);
 
         // -------------------- Auton Vars -------------------- //
         autonMinusL1 = findViewById(R.id.AutonMinusL1);
@@ -68,8 +80,8 @@ public class mainPage extends AppCompatActivity {
         netAttemptsPlus = findViewById(R.id.netAttemptsPlus);
         netScoredMinus = findViewById(R.id.netScoredMinus);
         netScoredPlus = findViewById(R.id.netScoredPlus);
-        autonProcessedPlus = findViewById(R.id.processedMinus);
-        autonProcessedMinus = findViewById(R.id.processedPlus);
+        autonProcessedPlus = findViewById(R.id.processedPlus);
+        autonProcessedMinus = findViewById(R.id.processedMinus);
         autonLayoutButton = findViewById(R.id.autonLayoutBtn);
         backToTeleBtn = findViewById(R.id.backToTele);
 
@@ -392,7 +404,7 @@ public class mainPage extends AppCompatActivity {
         super.onStart();
         FirebaseUser currentuser = auth.getCurrentUser();
         if(currentuser != null){
-
+            usernameE.setText(currentuser.getDisplayName());
         }
     }
 
@@ -443,6 +455,91 @@ public class mainPage extends AppCompatActivity {
             checkParking.setEnabled(true);
             checkShallowClimb.setEnabled(true);
             checkDeepClimb.setEnabled(true);
+        }
+    }
+
+    public void submitData(){
+        // Code to push data to FireBase
+        if(matchNum.getText().toString().equals("")){
+            matchNum.setError("You must enter a Match Number!");
+            //loading(false);
+        }else if(teamNum.getText().toString().equals("")) {
+            teamNum.setError("You must enter a team number!");
+            //loading(false);
+        } else {
+            String currentDate = new SimpleDateFormat("MM-dd-yyyy", Locale.getDefault()).format(new Date());
+            int checkHumanPlayerVal = 0;
+            int checkParkingVal = 0;
+            int checkShallowClimbVal = 0;
+            int checkDeepClimbVal = 0;
+            int checkLeaveStartVal = 0;
+
+            String key = data.child("matchData").push().getKey();
+
+            if (checkHumanPlayer.isChecked()){
+                checkHumanPlayerVal = 1;
+            }
+            if (checkParking.isChecked()){
+                checkParkingVal = 1;
+            }
+            if (checkShallowClimb.isChecked()){
+                checkShallowClimbVal = 1;
+            }
+            if (checkDeepClimb.isChecked()){
+                checkDeepClimbVal = 1;
+            }
+            if (checkLeaveStart.isChecked()){
+                checkLeaveStartVal = 1;
+            }
+
+            matchData match = new matchData(
+                    auth.getUid(),
+                    currentDate,
+                    Integer.parseInt(teamNum.getText().toString()),
+                    Integer.parseInt(matchNum.getText().toString()),
+                    Integer.parseInt(teleL1Num.getText().toString()),
+                    Integer.parseInt(teleL2Num.getText().toString()),
+                    Integer.parseInt(teleL3Num.getText().toString()),
+                    Integer.parseInt(teleL4Num.getText().toString()),
+                    Integer.parseInt(autonL1Num.getText().toString()),
+                    Integer.parseInt(autonL2Num.getText().toString()),
+                    Integer.parseInt(autonL3Num.getText().toString()),
+                    Integer.parseInt(autonL4Num.getText().toString()),
+                    Integer.parseInt(autonNetAttemptsNum.getText().toString()),
+                    Integer.parseInt(autonNetScoredNum.getText().toString()),
+                    Integer.parseInt(teleNetAttemptsNum.getText().toString()),
+                    Integer.parseInt(teleNetScoredNum.getText().toString()),
+                    Integer.parseInt(teleProcessedNum.getText().toString()),
+                    Integer.parseInt(autonProcessedNum.getText().toString()),
+                    Integer.parseInt(HPScoredNum.getText().toString()),
+                    Integer.parseInt(HPShotsNum.getText().toString()),
+                    checkHumanPlayerVal,
+                    checkParkingVal,
+                    checkShallowClimbVal,
+                    checkDeepClimbVal,
+                    checkLeaveStartVal
+                    );
+            Map<String, Object> matchValues = match.toMap();
+
+            Map<String, Object> childUpdates = new HashMap<>();
+            childUpdates.put("/" + key, matchValues);
+
+            ConnectivityManager cm = (ConnectivityManager)getSystemService(Context.CONNECTIVITY_SERVICE);
+            NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
+            boolean isConnected = activeNetwork != null && activeNetwork.isConnectedOrConnecting();
+
+            if(isConnected) {
+                data.updateChildren(childUpdates).addOnCompleteListener(new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        reload();
+
+                    }
+                });
+            }else {
+                data.updateChildren(childUpdates);
+                reload();
+            }
         }
     }
 
