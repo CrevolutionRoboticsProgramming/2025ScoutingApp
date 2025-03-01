@@ -146,6 +146,14 @@ public class mainPage extends AppCompatActivity {
         HPShotsNum = findViewById(R.id.HumanPlayerAttemptsNum);
 
 
+        submitBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                submitData();
+            }
+        });
+
+
         //TELEOP CORAL BUTTONS
 
         teleMinusL1.setOnClickListener(new View.OnClickListener() {
@@ -488,9 +496,9 @@ public class mainPage extends AppCompatActivity {
             if (checkDeepClimb.isChecked()){
                 checkDeepClimbVal = 1;
             }
-            if (checkLeaveStart.isChecked()){
-                checkLeaveStartVal = 1;
-            }
+//            if (checkLeaveStart.isChecked()){
+//                checkLeaveStartVal = 1;
+//            }
 
             matchData match = new matchData(
                     auth.getUid(),
